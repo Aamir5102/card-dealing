@@ -120,8 +120,8 @@ class Pack
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the card shuffler!");
-            Console.WriteLine("Please select the type of shuffle you would like to perform:");
+            Console.WriteLine("Card shuffler!");
+            Console.WriteLine("Select the type of shuffle youd like to do:");
             Console.WriteLine("1 - Fisher-Yates shuffle");
             Console.WriteLine("2 - Riffle shuffle");
             Console.WriteLine("Press any other key to exit");
@@ -150,7 +150,7 @@ class Pack
             }
             else
             {
-                Console.WriteLine("yes...");
+                Console.WriteLine("NO...");
             }
         }
     }
