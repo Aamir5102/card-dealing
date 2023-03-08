@@ -1,0 +1,15 @@
+/Users/aamirhussain/Desktop/Object Oriented Programming /card dealing/card dealing/obj/Debug/net7.0/card dealing.csproj.AssemblyReference.cache
+/Users/aamirhussain/Desktop/Object Oriented Programming /card dealing/card dealing/obj/Debug/net7.0/card dealing.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aamirhussain/Desktop/Object Oriented Programming /card dealing/card dealing/obj/Debug/net7.0/card dealing.AssemblyInfoInputs.cache
+/Users/aamirhussain/Desktop/Object Oriented Programming /card dealing/card dealing/obj/Debug/net7.0/card dealing.AssemblyInfo.cs
+/Users/aamirhussain/Desktop/Object Oriented Programming /card dealing/card dealing/obj/Debug/net7.0/card dealing.csproj.CoreCompileInputs.cache
+/Users/aamirhussain/Desktop/Object Oriented Programming /card dealing/card dealing/bin/Debug/net7.0/card dealing
+/Users/aamirhussain/Desktop/Object Oriented Programming /card dealing/card dealing/bin/Debug/net7.0/card dealing.deps.json
+/Users/aamirhussain/Desktop/Object Oriented Programming /card dealing/card dealing/bin/Debug/net7.0/card dealing.runtimeconfig.json
+/Users/aamirhussain/Desktop/Object Oriented Programming /card dealing/card dealing/bin/Debug/net7.0/card dealing.dll
+/Users/aamirhussain/Desktop/Object Oriented Programming /card dealing/card dealing/bin/Debug/net7.0/card dealing.pdb
+/Users/aamirhussain/Desktop/Object Oriented Programming /card dealing/card dealing/obj/Debug/net7.0/card dealing.dll
+/Users/aamirhussain/Desktop/Object Oriented Programming /card dealing/card dealing/obj/Debug/net7.0/refint/card dealing.dll
+/Users/aamirhussain/Desktop/Object Oriented Programming /card dealing/card dealing/obj/Debug/net7.0/card dealing.pdb
+/Users/aamirhussain/Desktop/Object Oriented Programming /card dealing/card dealing/obj/Debug/net7.0/card dealing.genruntimeconfig.cache
+/Users/aamirhussain/Desktop/Object Oriented Programming /card dealing/card dealing/obj/Debug/net7.0/ref/card dealing.dll
