@@ -124,7 +124,8 @@ class Pack
             Console.WriteLine("Select the type of shuffle youd like to do:");
             Console.WriteLine("1 - Fisher-Yates shuffle");
             Console.WriteLine("2 - Riffle shuffle");
-            Console.WriteLine("Press any other key to exit");
+            
+
             string input = Console.ReadLine();
             int shuffleType;
             if (int.TryParse(input, out shuffleType))
@@ -132,7 +133,6 @@ class Pack
                 Pack pack = new Pack();
                 bool shuffleResult = pack.Shuffle(shuffleType);
                 if (shuffleResult)
-                    //where the dealt card is printed and deal cards which is 5 cards 
                 {
                     Console.WriteLine("Shuffle successful!");
                     Card dealtCard = pack.Deal();
@@ -147,12 +147,15 @@ class Pack
                 else
                 {
                     Console.WriteLine("Invalid shuffle type selected.");
+                    Main(args);
                 }
             }
             else
             {
-                Console.WriteLine("NO...");
+                Console.WriteLine("Invalid input. Please enter 1, 2, or any other key to exit.");
+                Main(args); // call Main again to ask for another input
             }
         }
     }
 }
+
