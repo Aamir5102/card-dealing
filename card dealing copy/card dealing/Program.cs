@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+// giving the suits of the cards
 enum Suit
 {
     Hearts,
@@ -8,7 +8,7 @@ enum Suit
     Clubs,
     Spades
 }
-
+// giving the numbers of the cards here ace - king 
 enum Rank
 {
     Ace = 1,
@@ -36,7 +36,7 @@ class Card
 class Pack
 {
     private List<Card> cards;
-
+    // makes the pack of cards
     public Pack()
     {
         cards = new List<Card>();
@@ -48,7 +48,7 @@ class Pack
             }
         }
     }
-
+// where input is required on which shuffle needs to be done 
     public bool Shuffle(int typeOfShuffle)
     {
         switch (typeOfShuffle)
@@ -63,7 +63,7 @@ class Pack
                 return false;
         }
     }
-
+    //cards are being dealt
     public Card Deal()
     {
         if (cards.Count == 0)
@@ -84,7 +84,7 @@ class Pack
         }
         return dealtCards;
     }
-
+//making the types of shuffle
     private bool FisherYatesShuffle()
     {
         Random random = new Random();
@@ -115,7 +115,7 @@ class Pack
         return true;
     }
 
-
+//the information that was going to be printed in the terminal for the input 
     class Program
     {
         static void Main(string[] args)
@@ -132,6 +132,7 @@ class Pack
                 Pack pack = new Pack();
                 bool shuffleResult = pack.Shuffle(shuffleType);
                 if (shuffleResult)
+                    //where the dealt card is printed and deal cards which is 5 cards 
                 {
                     Console.WriteLine("Shuffle successful!");
                     Card dealtCard = pack.Deal();
