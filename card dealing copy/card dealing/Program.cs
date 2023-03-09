@@ -20,19 +20,20 @@ class Card
 {
     public Suit Suit { get; }
     public Rank Rank { get; }
-
+    
+    // create a new Card with a suit and number 
     public Card(Suit suit, Rank rank)
     {
         Suit = suit;
         Rank = rank;
     }
-
+    //returns a string version of the card 
     public override string ToString()
     {
         return $"{Rank} of {Suit}";
     }
 }
-
+// class pakc reprsents the desk of cards
 class Pack
 {
     private List<Card> cards;
@@ -40,23 +41,23 @@ class Pack
     public Pack()
     {
         cards = new List<Card>();
-        foreach (Suit suit in Enum.GetValues(typeof(Suit)))
+        foreach (Suit suit in Enum.GetValues(typeof(Suit)))//iterates aover all of the suits 
         {
-            foreach (Rank rank in Enum.GetValues(typeof(Rank)))
+            foreach (Rank rank in Enum.GetValues(typeof(Rank)))//iterates over all of the numbers
             {
-                cards.Add(new Card(suit, rank));
+                cards.Add(new Card(suit, rank));// adds a new card 
             }
         }
     }
-// where input is required on which shuffle needs to be done 
+// shuffles the cards on what is selected 
     public bool Shuffle(int typeOfShuffle)
     {
         switch (typeOfShuffle)
         {
             case 1:
-                return FisherYatesShuffle();
+                return FisherYatesShuffle();//does fisher yates shuffle
             case 2:
-                return RiffleShuffle();
+                return RiffleShuffle();// does a riffle shuffle 
             case 3:
                 return true;
             default:
@@ -70,9 +71,9 @@ class Pack
         {
             throw new InvalidOperationException("No cards left in the pack.");
         }
-        Card card = cards[0];
-        cards.RemoveAt(0);
-        return card;
+        Card card = cards[0];//gets card from top of pack
+        cards.RemoveAt(0); //removes card from pack
+        return card;//returns card that was dealt
     }
 
     public List<Card> Deal(int amount)
@@ -80,11 +81,11 @@ class Pack
         List<Card> dealtCards = new List<Card>();
         for (int i = 0; i < amount; i++)
         {
-            dealtCards.Add(Deal());
+            dealtCards.Add(Deal());//calls deal and adds it to delat cards
         }
-        return dealtCards;
+        return dealtCards;//returns the list of cards that were dealt
     }
-//making the types of shuffle
+//shuffles he cards with fisheryates shuffle 
     private bool FisherYatesShuffle()
     {
         Random random = new Random();
@@ -97,7 +98,7 @@ class Pack
         }
         return true;
     }
-
+    //shuffles the cards with a riffle shuffle
     private bool RiffleShuffle()
     {
         List<Card> shuffledCards = new List<Card>();
@@ -138,23 +139,23 @@ class Pack
                     Console.WriteLine("Shuffle successful!");
                     Card dealtCard = pack.Deal();
                     Console.WriteLine($"Dealt card: {dealtCard}");
-                    List<Card> dealtCards = pack.Deal(5);
+                    List<Card> dealtCards = pack.Deal(5);// 5 cards being dealt
                     Console.WriteLine("Dealt cards:");
                     foreach (Card card in dealtCards)
                     {
-                        Console.WriteLine(card);
+                        Console.WriteLine(card);//prints cards in the console 
                     }
                 }
                 else
                 {
                     Console.WriteLine("Invalid shuffle type selected.");
-                    Main(args);
+                    Main(args);// call Main again to ask for another input if value not 1 or 2
                 }
             }
             else
             {
                 Console.WriteLine("Invalid input. Please enter 1 or 2.");
-                Main(args); // call Main again to ask for another input
+                Main(args); // call Main again to ask for another inputif value not 1 or 2
             }
         }
     }
