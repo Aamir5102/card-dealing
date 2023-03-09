@@ -124,6 +124,7 @@ class Pack
             Console.WriteLine("Select the type of shuffle youd like to do:");
             Console.WriteLine("1 - Fisher-Yates shuffle");
             Console.WriteLine("2 - Riffle shuffle");
+            Console.WriteLine("3 - No shuffle");
             
 
             string input = Console.ReadLine();
@@ -152,7 +153,7 @@ class Pack
             }
             else
             {
-                Console.WriteLine("Invalid input. Please enter 1, 2, or any other key to exit.");
+                Console.WriteLine("Invalid input. Please enter 1 or 2.");
                 Main(args); // call Main again to ask for another input
             }
         }
